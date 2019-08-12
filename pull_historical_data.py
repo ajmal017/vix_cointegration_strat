@@ -93,6 +93,7 @@ def pull_symbol(symbol, source):
     #set to today. Can change the end date
         data = yf.download(tickers = symbol, start = ks.start, end = ks.today)
         data['Symbol'] = symbol
+        data.to_csv(symbol + '.txt')
     elif source == 'quandl':
         print('Enter Symbol Name:')
         data = quandl.get(dataset=symbol, start_date = ks.start,end_date = ks.today, api_key = ks.api_key)
