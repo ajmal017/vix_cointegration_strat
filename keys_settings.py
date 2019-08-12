@@ -1,8 +1,9 @@
 import os as os
-
+import datetime as datetime
 api_key = 'B6KP8sRUDocDsQw1zc8n'
 alphavantage_api_key = '9VORVZNAJ67273RW'
 start = '2017-12-15'
+today = datetime.date.today()
 end = '2019-08-07'
 initial_capital = 1000000
 symbol = 'SPY'.upper()

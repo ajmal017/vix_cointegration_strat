@@ -3,6 +3,7 @@ import pandas as pd
 import quandl
 import keys_settings as ks
 import yfinance as yf
+from pandas import DataFrame
 from sqlalchemy import create_engine
 #engine = create_engine('sqlite:///database.db')
 
@@ -86,6 +87,19 @@ currency_data['Log Returns'] = (np.log(currency_data['Value']/currency_data['Pre
 currency_data['Cumulative Log Change'] = currency_data['Log Returns'].cumsum()
 currency_csv = currency_data.to_csv(ks.currency_write_path)
 
+def pull_symbol(symbol, source):
+    data = []
+    if source == 'yahoo finance':
+    #set to today. Can change the end date
+        data = yf.download(tickers = symbol, start = ks.start, end = ks.today)
+        data['Symbol'] = symbol
+    elif source == 'quandl':
+        print('Enter Symbol Name:')
+        data = quandl.get(dataset=symbol, start_date = ks.start,end_date = ks.today, api_key = ks.api_key)
+        data['Symbol'] = input()
+    else:
+        data = print('Its not here yet dude . . .')
+    return data
 
 #print(portfolio['Adj Close'].loc[portfolio['Symbol'] == '^VIX'])
 

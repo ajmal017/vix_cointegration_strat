@@ -50,7 +50,7 @@ fig = plt.figure(figsize=(8,8))
 plt.style.use('seaborn')
 axes1 = fig.add_axes([0.05, 0.1, 0.8, 0.8])
 axes1.plot(symbol['Adj Close'], marker='o', ls='', color='g', markersize=5, label = 'Close')
-axes1.plot(symbol['hull_moving_avg'], marker='', color='r', markersize=5, label = 'Hull MA')
+axes1.plot(symbol['hull_moving_avg'], marker='',color = 'blue', markersize=5, label = 'Hull MA')
 axes1.legend(loc = 0)
 
 plt.plot(symbol['hull_moving_avg'])
