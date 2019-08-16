@@ -39,6 +39,7 @@ portfolio['Previous_close_qrtr'] = portfolio.groupby(['Symbol', 'Year', 'quarter
 portfolio['cum_returns'] = portfolio.groupby(['Symbol']).cumsum()['Returns']
 portfolio['Yrly_Returns'] = np.log(portfolio['Adj Close']/portfolio['Prev_Close_Yrly'])
 portfolio['Qrtrly_Returns'] = np.log(portfolio['Adj Close']/portfolio['Previous_close_qrtr'])
+portfolio['30 Day Vol'] = portfolio['Adj Close'].rolling(30).std()
 portfolio.dropna(inplace = True)
 #pfolio = portfolio.to_sql(ks.sql_portfolio, con = engine)
 # get quandl data for dictionary and concat to a dataframe using the dictionaries, urls, from keys_settings
@@ -63,6 +64,7 @@ macro_data['Percent Change'] = (macro_data['Net-Change']/macro_data['Previous Se
 macro_data['Cumulative Change'] = macro_data.groupby(macro_data['Symbol']).cumsum()['Net-Change']
 macro_data['Log Returns'] = (np.log(macro_data['Settle']/macro_data['Previous Settle']))
 macro_data['Cumulative Log Change'] = macro_data['Log Returns'].cumsum()
+macro_data['30 Day Vol'] = macro_data['Settle'].rolling(30).std()
 macro_csv = macro_data.to_csv(ks.dataset_write_path)
 #portfolio['Returns']= (np.log(portfolio['Adj Close']/portfolio['Prev_Close']))
 #macro_sql = macro_data.to_sql(ks.sql_dataset, con = engine )
