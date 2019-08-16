@@ -21,6 +21,7 @@ dataset_write_path = r"C:/Users/Faye Brugman/PycharmProjects/vix_cointegration_s
 portfolio_write_path = r"C:/Users/Faye Brugman/PycharmProjects/vix_cointegration_strat/portfolio.csv"
 sql_dataset = r"C:/Users/Faye Brugman/PycharmProjects/vix_cointegration_strat/dataset.sql"
 sql_portfolio = r"C:/Users/Faye Brugman/PycharmProjects/vix_cointegration_strat/portfolio.sql"
+investment_list = ['SPY','TLT','IEF','GLD','DBC', 'SSO','QLD','QQQ', 'XLV','XLU','IWM', 'DIA', 'EEM', '^VIX']
 dataset_list = ['SP500','Gold', 'VX1','VX2', 'VX3','VX4']
 currency_write_path = r"C:/Users/Faye Brugman/PycharmProjects/vix_cointegration_strat/currency.csv"
 

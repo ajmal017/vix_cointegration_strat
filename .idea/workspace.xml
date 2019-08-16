@@ -4,7 +4,6 @@
     <list default="true" id="b10c212a-997d-4506-ab4d-353535180d6a" name="Default Changelist" comment="Data/Strategy/Plot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/backtest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hull_moving_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/hull_moving_average.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keys_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/keys_settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pull_historical_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pull_historical_data.py" afterDir="false" />
     </list>
@@ -40,43 +39,6 @@
   </component>
   <component name="ProjectId" id="1PIAbVK4Np4oOMLYkEl71O52Y9G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="vix_cointegration_strat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vix_cointegration_strat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vix_cointegration_strat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="vix_cointegration_strat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (vix_cointegration_strat) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="vix_cointegration_strat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="vix_cointegration_strat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python&#10;TEXT" />
@@ -261,9 +223,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.scratch_2 (1)" />
+        <item itemvalue="Python.pull_historical_data" />
         <item itemvalue="Python.hull_moving_average (1)" />
         <item itemvalue="Python.scratch_2" />
-        <item itemvalue="Python.pull_historical_data" />
         <item itemvalue="Python.strategy" />
       </list>
     </recent_temporary>
@@ -304,5 +266,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Data/Strategy/Plot" />
     <option name="LAST_COMMIT_MESSAGE" value="Data/Strategy/Plot" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

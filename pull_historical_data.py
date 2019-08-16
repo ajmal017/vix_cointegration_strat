@@ -13,7 +13,7 @@ from sqlalchemy import create_engine
 #curr_data, meta_data = cc.get_currency_exchange_daily(from_symbol= 'AUD', to_symbol= 'JPY', outputsize= 'full')
 
 #Create an investment list and download from yfinance
-investment_list = ['SPY','TLT','IEF','GLD','DBC', 'SSO','QLD','QQQ', 'XLV','XLU','IWM', 'DIA', 'EEM', '^VIX']
+investment_list = ks.investment_list
 investments = {}
 i = 0
 for i in investment_list:

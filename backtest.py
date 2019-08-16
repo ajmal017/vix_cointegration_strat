@@ -22,5 +22,5 @@ def linear_weight_moving_average(signal, period):
             (signal[i - period : i] * (np.arange(period) + 1)).sum()
             / (np.arange(period) + 1).sum()
         )
-    return buffer
+    return pd.Series(buffer)
 
