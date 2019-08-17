@@ -46,6 +46,17 @@ vx['VX1-VX2 Spread'] = (vx['Settle_vx1'] - vx['Settle_vx2'])
 vx['VIX-VX2 Spread'] = (vx['Adj Close'] - vx['Settle_vx2'])
 vx['VIX-VX3 Spread'] = (vx['Adj Close'] - vx['Settle'])
 vx['VIX-VX4 Spread'] = (vx['Adj Close'] - vx['Settle_vx4'])
+vx['VIX-VX1 30 Day STD'] = (vx['VIX-VX1 Spread'].rolling(30).std())
+vx['VX1-VX2 30 Day STD'] = (vx['VX1-VX2 Spread'].rolling(30).std())
+vx['VIX-VX2 30 Day STD'] = (vx['VIX-VX2 Spread'].rolling(30).std())
+vx['VIX-VX3 30 Day STD'] = (vx['VIX-VX3 Spread'].rolling(30).std())
+vx['VIX-VX4 30 Day STD'] = (vx['VIX-VX4 Spread'].rolling(30).std())
+vx['VIX-VX1 30 Day Mean'] = (vx['VIX-VX1 Spread'].rolling(30).mean())
+vx['VX1-VX2 30 Day Mean'] = (vx['VX1-VX2 Spread'].rolling(30).mean())
+vx['VIX-VX2 30 Day Mean'] = (vx['VIX-VX2 Spread'].rolling(30).mean())
+vx['VIX-VX3 30 Day Mean'] = (vx['VIX-VX3 Spread'].rolling(30).mean())
+vx['VIX-VX4 30 Day Mean'] = (vx['VIX-VX4 Spread'].rolling(30).mean())
+
 vix_list = [vx['Adj Close'], vx['Settle_vx1'],vx['Settle_vx2'],vx['Settle'],vx['Settle_vx4']]
 print('AUD/JPY SPOT:')
 print(aud_jpy['Value'].loc[date])
@@ -71,6 +82,3 @@ x = vix_list[1]
 y = vix_list[2]
 print('VX1 over VX2:')
 print(cointegration_test(x,y))
-
-
-print(symbol['30 Day Vol'].tail())

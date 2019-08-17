@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b10c212a-997d-4506-ab4d-353535180d6a" name="Default Changelist" comment="Data/Strategy/Plot" />
+    <list default="true" id="b10c212a-997d-4506-ab4d-353535180d6a" name="Default Changelist" comment="Data/Strategy/Plot">
+      <change beforePath="$PROJECT_DIR$/strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/strategy.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
