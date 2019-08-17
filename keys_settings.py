@@ -6,7 +6,10 @@ start = '2017-12-15'
 today = datetime.date.today()
 end = '2019-08-07'
 initial_capital = 1000000
-symbol = 'SPY'.upper()
+symbol = 'SPY'
+symbol = symbol.upper()
+source = 'yahoo finance'
+source = source.lower()
 sma = 20
 lma = 50
 

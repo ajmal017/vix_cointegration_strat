@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b10c212a-997d-4506-ab4d-353535180d6a" name="Default Changelist" comment="Data/Strategy/Plot">
+      <change afterPath="$PROJECT_DIR$/portfolio_and_default_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SPY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SPY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/backtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hull_moving_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/hull_moving_average.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio.csv" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keys_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/keys_settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pull_historical_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pull_historical_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/strategy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,22 +23,9 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>vx1_vx2_dict</find>
-      <find>symbol</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
   </component>
   <component name="ProjectId" id="1PIAbVK4Np4oOMLYkEl71O52Y9G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -64,7 +53,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hull_moving_average (1)">
+  <component name="RunManager" selected="Python.strategy">
     <configuration name="hull_moving_average (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="vix_cointegration_strat" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -223,11 +212,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.strategy" />
         <item itemvalue="Python.hull_moving_average (1)" />
         <item itemvalue="Python.scratch_2 (1)" />
         <item itemvalue="Python.pull_historical_data" />
         <item itemvalue="Python.scratch_2" />
-        <item itemvalue="Python.strategy" />
       </list>
     </recent_temporary>
   </component>

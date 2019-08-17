@@ -1,3 +1,4 @@
+import keys_settings as ks
 import numpy as np
 import pandas as pd
 from pull_historical_data import pull_symbol
@@ -6,7 +7,7 @@ from pandas.plotting import register_matplotlib_converters
 from backtest import linear_weight_moving_average
 register_matplotlib_converters()
 DataFrame = pd.DataFrame
-symbol = pull_symbol('SPY', 'yahoo finance')
+symbol = pull_symbol(ks.symbol, ks.source)
 symbol = DataFrame(symbol)
 symbol.reset_index(inplace= True)
 #define the period

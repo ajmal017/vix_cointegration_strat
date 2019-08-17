@@ -1,9 +1,16 @@
 from backtest import cointegration_test
-from pull_historical_data import macro_data
-from pull_historical_data import portfolio
+from portfolio_and_default_data import macro_data
+from portfolio_and_default_data import portfolio
 from keys_settings import date
-from pull_historical_data import currency_data
+from portfolio_and_default_data import currency_data
 from forex_python.converter import CurrencyRates
+import pull_historical_data as pull
+import keys_settings as ks
+symbol = pull.pull_symbol(ks.symbol, ks.source)
+symbol.reset_index(inplace= True)
+#work to make it so that adj close is uniform between download sources
+symbol = pull.compute_price_data(symbol, symbol['Adj Close'])#may switch to "Settle for quandl
+symbol.set_index(symbol['Date'], inplace = True)
 
 aud_jpy = ['AUD/JPY']
 vix = ['^VIX']
@@ -12,6 +19,7 @@ vx1 = ['VX1']
 vx2 = ['VX2']
 vx3 = ['VX3']
 vx4 = ['VX4']
+
 aud_jpy = currency_data.loc[currency_data['Symbol'].isin(aud_jpy)]
 aud_jpy.set_index('Date', inplace = True)
 vix = portfolio.loc[portfolio['Symbol'].isin(vix)]
@@ -65,3 +73,4 @@ print('VX1 over VX2:')
 print(cointegration_test(x,y))
 
 
+print(symbol['30 Day Vol'].tail())
