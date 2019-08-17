@@ -1,11 +1,15 @@
 import os as os
-
+import datetime as datetime
 api_key = 'B6KP8sRUDocDsQw1zc8n'
 alphavantage_api_key = '9VORVZNAJ67273RW'
 start = '2017-12-15'
+today = datetime.date.today()
 end = '2019-08-07'
 initial_capital = 1000000
-symbol = 'SPY'.upper()
+symbol = 'SPY'
+symbol = symbol.upper()
+source = 'yahoo finance'
+source = source.lower()
 sma = 20
 lma = 50
 
@@ -20,6 +24,7 @@ dataset_write_path = r"C:/Users/Faye Brugman/PycharmProjects/vix_cointegration_s
 portfolio_write_path = r"C:/Users/Faye Brugman/PycharmProjects/vix_cointegration_strat/portfolio.csv"
 sql_dataset = r"C:/Users/Faye Brugman/PycharmProjects/vix_cointegration_strat/dataset.sql"
 sql_portfolio = r"C:/Users/Faye Brugman/PycharmProjects/vix_cointegration_strat/portfolio.sql"
+investment_list = ['SPY','TLT','IEF','GLD','DBC', 'SSO','QLD','QQQ', 'XLV','XLU','IWM', 'DIA', 'EEM', '^VIX']
 dataset_list = ['SP500','Gold', 'VX1','VX2', 'VX3','VX4']
 currency_write_path = r"C:/Users/Faye Brugman/PycharmProjects/vix_cointegration_strat/currency.csv"
 
