@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b10c212a-997d-4506-ab4d-353535180d6a" name="Default Changelist" comment="Data/Strategy/Plot">
-      <change beforePath="$PROJECT_DIR$/dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/dataset.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SPY.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hull_moving_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/hull_moving_average.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio.csv" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pull_historical_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pull_historical_data.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,7 +64,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.scratch_2 (1)">
+  <component name="RunManager" selected="Python.hull_moving_average (1)">
     <configuration name="hull_moving_average (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="vix_cointegration_strat" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,9 +223,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hull_moving_average (1)" />
         <item itemvalue="Python.scratch_2 (1)" />
         <item itemvalue="Python.pull_historical_data" />
-        <item itemvalue="Python.hull_moving_average (1)" />
         <item itemvalue="Python.scratch_2" />
         <item itemvalue="Python.strategy" />
       </list>

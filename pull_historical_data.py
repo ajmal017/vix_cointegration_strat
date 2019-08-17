@@ -13,6 +13,21 @@ from sqlalchemy import create_engine
 #curr_data, meta_data = cc.get_currency_exchange_daily(from_symbol= 'AUD', to_symbol= 'JPY', outputsize= 'full')
 
 #Create an investment list and download from yfinance
+def pull_symbol(symbol, source):
+    data = []
+    if source == 'yahoo finance':
+    #set to today. Can change the end date
+        data = yf.download(tickers = symbol, start = ks.start, end = ks.today)
+        data['Symbol'] = symbol
+        data.to_csv(symbol + '.txt')
+    elif source == 'quandl':
+        print('Enter Symbol Name:')
+        data = quandl.get(dataset=symbol, start_date = ks.start,end_date = ks.today, api_key = ks.api_key)
+        data['Symbol'] = input()
+    else:
+        data = print('Its not here yet dude . . .')
+    return data
+
 investment_list = ks.investment_list
 investments = {}
 i = 0
@@ -89,20 +104,7 @@ currency_data['Log Returns'] = (np.log(currency_data['Value']/currency_data['Pre
 currency_data['Cumulative Log Change'] = currency_data['Log Returns'].cumsum()
 currency_csv = currency_data.to_csv(ks.currency_write_path)
 
-def pull_symbol(symbol, source):
-    data = []
-    if source == 'yahoo finance':
-    #set to today. Can change the end date
-        data = yf.download(tickers = symbol, start = ks.start, end = ks.today)
-        data['Symbol'] = symbol
-        data.to_csv(symbol + '.txt')
-    elif source == 'quandl':
-        print('Enter Symbol Name:')
-        data = quandl.get(dataset=symbol, start_date = ks.start,end_date = ks.today, api_key = ks.api_key)
-        data['Symbol'] = input()
-    else:
-        data = print('Its not here yet dude . . .')
-    return data
+
 
 #print(portfolio['Adj Close'].loc[portfolio['Symbol'] == '^VIX'])
 
