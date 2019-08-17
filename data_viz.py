@@ -18,7 +18,7 @@ z = vix_list[2]
 
 def historical_spread():
     fig = plt.figure(figsize=(10, 12),)
-    plt.style.use('seaborn')
+    plt.style.use('seaborn dark')
     # [left, bottom, width, height]
     # main axes
     axes2 = fig.add_axes([0.05, 0.1, 0.9, 0.8])
@@ -40,7 +40,7 @@ def historical_spread():
 
 def spread_regression_plot():
     fig = plt.figure(figsize=(8,8))
-    plt.style.use('seaborn')
+    plt.style.use('seaborn dark')
     axes1 = fig.add_axes([0.05, 0.1, 0.8, 0.8])
     axes1.plot(x, y, marker='o', ls='', color='g', markersize=5, label = 'SPOT/VX1')
     axes1.plot(x, z, marker='o', ls='', color='r', markersize=5, label = 'SPOT/VX2')
@@ -53,6 +53,7 @@ def spread_regression_plot():
 
 def histogram():
     fig = plt.figure(figsize=(12,12))
+    plt.style.use('ggplot')
     axes1 = fig.add_axes([0.05, 0.1,0.8,0.8])
-    axes1.hist(vx['Adj Close'], bins = 'auto')
+    axes1.hist(vx['Adj Close'], bins = 60, color = 'green')
     plt.show()
