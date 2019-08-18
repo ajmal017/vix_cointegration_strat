@@ -1,13 +1,12 @@
-import keys_settings as ks
 import numpy as np
 import pandas as pd
-from pull_historical_data import pull_symbol
+from keys_settings import symbol
 import matplotlib.pyplot as plt
 from pandas.plotting import register_matplotlib_converters
 from backtest import linear_weight_moving_average
 register_matplotlib_converters()
 DataFrame = pd.DataFrame
-symbol = pull_symbol(ks.symbol, ks.source)
+
 symbol = DataFrame(symbol)
 symbol.reset_index(inplace= True)
 #define the period
@@ -36,17 +35,6 @@ symbol.set_index(symbol['Date'], inplace = True)
 
 
 print(symbol[['Adj Close','WMA','WMA2','WMA_2_x_2','WMA3','hull_moving_avg']].tail())
-
-##plot the figure
-fig = plt.figure(figsize=(8,8))
-plt.style.use('seaborn')
-axes1 = fig.add_axes([0.05, 0.1, 0.8, 0.8])
-axes1.plot(symbol['Adj Close'], marker='o', ls='--', color='g', markersize=5, label = 'Close')
-axes1.plot(symbol['hull_moving_avg'], marker = '',color = 'red', markersize=5, label = 'Hull MA')
-axes1.legend(loc = 0)
-
-plt.plot(symbol['hull_moving_avg'])
-plt.show()
 """
 potential maths to consider
 
