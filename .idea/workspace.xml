@@ -4,9 +4,7 @@
     <list default="true" id="b10c212a-997d-4506-ab4d-353535180d6a" name="Default Changelist" comment="Data/Strategy/Plot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_viz.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_viz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hull_moving_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/hull_moving_average.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keys_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/keys_settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/measure_returns.py" beforeDir="false" afterPath="$PROJECT_DIR$/measure_returns.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trend_following_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/trend_following_strategy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.trend_following_strategy">
+  <component name="RunManager" selected="Python.option_data">
     <configuration name="hull_moving_average (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="vix_cointegration_strat" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -210,8 +208,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.trend_following_strategy" />
         <item itemvalue="Python.option_data" />
+        <item itemvalue="Python.trend_following_strategy" />
         <item itemvalue="Python.scratch_2 (1)" />
         <item itemvalue="Python.strategy" />
         <item itemvalue="Python.hull_moving_average (1)" />

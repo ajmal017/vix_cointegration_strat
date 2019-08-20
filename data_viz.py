@@ -1,7 +1,6 @@
 import numpy as np
 import keys_settings as ks
 from strategy import vix_list
-from strategy import vx
 import matplotlib.pyplot as plt
 from pandas.plotting import register_matplotlib_converters
 register_matplotlib_converters()
