@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b10c212a-997d-4506-ab4d-353535180d6a" name="Default Changelist" comment="Data/Strategy/Plot">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_viz.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_viz.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/trend_following_strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/trend_following_strategy.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
