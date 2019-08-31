@@ -13,16 +13,14 @@ from sqlalchemy import create_engine
 #curr_data, meta_data = cc.get_currency_exchange_daily(from_symbol= 'AUD', to_symbol= 'JPY', outputsize= 'full')
 
 #Create an investment list and download from yfinance
-def pull_symbol(symbol, source):
-    data = []
+def pull_symbol(symbol, source, start, end):
     if source == 'yahoo finance':
-    #set to today. Can change the end date
-        data = yf.download(tickers = symbol, start = ks.start, end = ks.today)
+        data = yf.download(tickers = symbol, start = start, end = end)
         data['Symbol'] = symbol
         data.to_csv(symbol + '.txt')
     elif source == 'quandl':
         print('Enter Symbol Name:')
-        data = quandl.get(dataset=symbol, start_date = ks.start,end_date = ks.today, api_key = ks.api_key)
+        data = quandl.get(dataset=symbol, start_date = start,end_date = end, api_key = ks.api_key)
         data['Symbol'] = input()
     else:
         data = print('Its not here yet dude . . .')
@@ -41,5 +39,6 @@ def compute_price_data(Dataset, Price_input):
     Dataset['Yrly_Returns'] = np.log(Price_input / Dataset['Prev_Close_Yrly'])
     Dataset['Qrtrly_Returns'] = np.log(Price_input / Dataset['Previous_close_qrtr'])
     Dataset['30 Day Vol'] = Price_input.rolling(30).std()
+    Dataset['30 Day Mean Vol'] = Dataset['30 Day Vol'].rolling(30).mean()
     Dataset.dropna(inplace=True)
     return Dataset

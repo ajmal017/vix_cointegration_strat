@@ -1,6 +1,5 @@
 import os as os
 import datetime as datetime
-from pull_historical_data import pull_symbol
 api_key = 'B6KP8sRUDocDsQw1zc8n'
 alphavantage_api_key = '9VORVZNAJ67273RW'
 start = '2017-12-15'
@@ -16,8 +15,6 @@ lma = 50
 
 #Specify a date
 date = '2018-02-05'
-
-symbol = pull_symbol(symbol,source)
 
 #Save Paths
 os.getcwd()

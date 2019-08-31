@@ -6,11 +6,11 @@ from portfolio_and_default_data import currency_data
 from forex_python.converter import CurrencyRates
 import pull_historical_data as pull
 import keys_settings as ks
-symbol = pull.pull_symbol(ks.symbol, ks.source)
-symbol.reset_index(inplace= True)
+#symbol = pull.pull_symbol(ks.symbol, ks.source)
+#symbol.reset_index(inplace= True)
 #work to make it so that adj close is uniform between download sources
-symbol = pull.compute_price_data(symbol, symbol['Adj Close'])#may switch to "Settle for quandl
-symbol.set_index(symbol['Date'], inplace = True)
+#symbol = pull.compute_price_data(symbol, symbol['Adj Close'])#may switch to "Settle for quandl
+#symbol.set_index(symbol['Date'], inplace = True)
 
 aud_jpy = ['AUD/JPY']
 vix = ['^VIX']
