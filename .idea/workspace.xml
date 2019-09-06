@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b10c212a-997d-4506-ab4d-353535180d6a" name="Default Changelist" comment="Data/Strategy/Plot">
-      <change afterPath="$PROJECT_DIR$/portfolio_and_default_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/backtest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hull_moving_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/hull_moving_average.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SPY.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SPY.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keys_settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/keys_settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pull_historical_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/pull_historical_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/strategy.py" beforeDir="false" afterPath="$PROJECT_DIR$/strategy.py" afterDir="false" />
@@ -117,7 +115,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pull_historical_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="option_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="vix_cointegration_strat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -129,7 +127,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pull_historical_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/option_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,27 +157,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scratch_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="vix_cointegration_strat" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\Faye Brugman\anacondafolder\envs\vix_cointegration_strat\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/vix_cointegration_strat" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="strategy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="vix_cointegration_strat" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -201,22 +178,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="trend_following_strategy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="vix_cointegration_strat" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trend_following_strategy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.hull_moving_average" />
       <item itemvalue="Python.measure_returns" />
-      <item itemvalue="Python.pull_historical_data" />
-      <item itemvalue="Python.scratch_2" />
+      <item itemvalue="Python.hull_moving_average (1)" />
+      <item itemvalue="Python.option_data" />
       <item itemvalue="Python.scratch_2 (1)" />
       <item itemvalue="Python.strategy" />
-      <item itemvalue="Python.hull_moving_average (1)" />
+      <item itemvalue="Python.trend_following_strategy" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.strategy" />
-        <item itemvalue="Python.hull_moving_average (1)" />
+        <item itemvalue="Python.option_data" />
+        <item itemvalue="Python.trend_following_strategy" />
         <item itemvalue="Python.scratch_2 (1)" />
-        <item itemvalue="Python.pull_historical_data" />
-        <item itemvalue="Python.scratch_2" />
+        <item itemvalue="Python.hull_moving_average (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +245,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

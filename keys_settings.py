@@ -16,8 +16,6 @@ lma = 50
 #Specify a date
 date = '2018-02-05'
 
-
-
 #Save Paths
 os.getcwd()
 dataset_write_path = r"C:/Users/Faye Brugman/PycharmProjects/vix_cointegration_strat/dataset.csv"

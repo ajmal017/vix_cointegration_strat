@@ -1,6 +1,3 @@
-from data_viz import historical_spread
-from data_viz import spread_regression_plot
-
-
-historical_spread()
-
+from portfolio_and_default_data import portfolio
+print(portfolio[['Symbol','Returns']].groupby('Symbol').sum())
+print(portfolio[['Year','Symbol', 'Yrly_Returns']])
